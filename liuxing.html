@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>多宝专属</title>
+		<meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no" />
+		<link rel="shortcut icon" href="img/wangji.jpg">
+		<link rel="stylesheet" href="css/slider-wb.css">
+		  <style>a{TEXT-DECORATION:none}</style>
+    <style>a{color:#8b6a60}a:hover{color:white}</style>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			if($(window).height()<920){			
+				document.write('<meta name="viewport" content="target-densitydpi=320,width='+920/($(window).height()/640)+',user-scalable=no" />');
+			}
+		</script>
+		<script type="text/javascript" src="js/jquery.meteorShowers-0.0.0.1.js" ></script>
+		<style type="text/css">
+			body{
+				background-image: url(img/bg3.jpg);
+				background-size: 100%;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+	<audio autoplay="autoplay" loop="loop" ><source src="./music/next_second.mp3"></audio>
+	<div id="nav" style="background-color: thistie">
+	<input name="nav-switch" id="nav-switch" type="checkbox">
+	<label class="label" for="nav-switch">
+		<div class="container">
+			<div class="nav-on">
+				<ul class="menu">
+					<li class="home"><a href="index.html">上一页</a></li>
+			</ul></div>
+			<div class="nav-off">
+				<div id="icon"><div></div><div></div></div>
+			</h1>
+			</div>
+		</div>
+	</label>
+</div> 
+	<div style="width:610px;height:350px;color: #7fb80e;margin-left: auto;margin-right: auto;margin-top:140px;text-align: center;">
+		<marquee scrollAmount=2 width=610 height=350 direction=up behavior=scroll onmouseover=stop() onmouseout=start() >
+		 漫天的流星犹如茫茫人海匆匆而过的行人<br><br>
+		 缘起，则聚，缘灭，则散。深深浅浅的缘，各种各样的人<br><br>
+		 与你一起谱写一些美丽，一些感动，一些温存，一些眷恋，由它们拼凑成你多彩的人生<br><br>
+		 都说流星有求必应，这个天外的来客，惊艳你的同时，带走了你的思念和祝福<br><br>
+	            去追寻下一个缘，缘分到了<br><br>
+	            从此携手，从此依偎<br><br>
+	            就连回眸一笑<br><br>
+	            都带着美好<br><br>
+		</marquee>
+	</div>
+	<br>
+		<a href="xiangce.html" style="margin-left: 73%;">众里寻她,蓦然回首</a>
+	</body>
+	<script>
+		$(function(){
+			var imgs=[
+			'img/lx/lx_1.png',
+			'img/lx/lx_2.png',
+			'img/lx/lx_3.png',
+			'img/lx/lx_4.png',
+			'img/lx/lx_5.png',
+			'img/lx/lx_6.png',
+			'img/lx/lx_7.png',
+			];
+			meteorShowers.option(imgs);//配置流星雨传入流星图片数组
+			meteorShowers.start();//开始流星雨
+			//meteorShowers.stop();//停止流星雨
+			//meteorShowers.end();//结束流星雨
+		})
+	</script>
+</html>
